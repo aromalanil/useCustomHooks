@@ -5,10 +5,9 @@ import { useState } from 'react';
  * @param {boolean} geolocation it is a boolean that request for browser permitions.
  * @returns {Object} Object contains an object with the latitude and longitude.
  */
-
 const useGeolocalisation = (geolocation) => {
   const [latLong, setLatLong] = useState({latitude: 0, longitude: 0});
-
+  const [errorMessage, setErrorMessage] = useState({error: "The browser doesn't support geolocalitation"});
   // We are calling our navigator element that allow us know the position
   if (navigator.geolocation && geolocation) {
     // if we have permissions we should be able to access to getCurrentPosition method
@@ -21,9 +20,8 @@ const useGeolocalisation = (geolocation) => {
       setLatLong(userPosition);
     });
   } else {
-    console.error("The browser doesn't support geolocalitation")
+    return [errorMessage]
   }
-
   return [latLong]
 }
 
