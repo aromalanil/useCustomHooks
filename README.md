@@ -9,8 +9,8 @@
 	<a href="https://github.com/aromalanil/useCustomHooks/issues">
 		<img alt="GitHub issues" src="https://img.shields.io/github/issues/aromalanil/useCustomHooks?style=for-the-badge">
 	</a>
-	<a href="https://github.com/aromalanil/useCustomHooks/blob/master/LICENSE">
-		<img alt="GitHub License" src="https://img.shields.io/github/license/aromalanil/useCustomHooks?style=for-the-badge">
+	<a href="https://github.com/aromalanil/useCustomHooks/commits/master">
+		<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/aromalanil/useCustomHooks?style=for-the-badge">
 	</a>
 	</div>
 </div>
