@@ -82,12 +82,26 @@ const LocalValue = () =>{
 ## 🤝🏻 Contribution
 PRs are welcome.
 
-### Guidelines
+### 📋 Guidelines
 - Create an issue before contributing
 - If you are contributing a custom hook, please explain the working or include an example, a [CodeSandBox](https://codesandbox.io/) link will be ideal.
 
+## Contributors ✨
 
-</br>
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://allcontributors.org) specification.
+Contributions of any kind are welcome!
 
 ## 📜 License
 
@@ -115,6 +129,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## ✍🏻 Author
+## ✍🏻 Creator
 
 [Aromal Anil](https://aromalanil.me)
