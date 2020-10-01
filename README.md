@@ -92,7 +92,7 @@ Get latitude and longitude positions from your browser
 
 ```jsx
 import React from "react"
-import useGeolocation from "useGeolocation"
+import useGeoLocation from "useGeoLocation"
 
 const Home = () => {
   /*
@@ -105,7 +105,7 @@ const Home = () => {
   * 
   */
 
-  const [geolocation] = useGeolocation();
+  const [geolocation] = useGeoLocation();
 
   return (
     <div>
