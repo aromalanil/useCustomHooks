@@ -12,7 +12,13 @@
 	<a href="https://github.com/aromalanil/useCustomHooks/commits/master">
 		<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/aromalanil/useCustomHooks?style=for-the-badge">
 	</a>
-	</div>
+  </br>
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+BADGE
+<!-- ALL-CONTRIBUTORS-BADGE:END --> 
+
+  </div>
 </div>
 <br/>
 
@@ -95,7 +101,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
 </table>
-
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
