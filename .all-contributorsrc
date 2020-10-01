@@ -16,6 +16,15 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "RahulMahesh62",
+      "name": "Rahul Mahesh",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/41413029?v=4",
+      "profile": "https://www.rahulmahesh.me/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
