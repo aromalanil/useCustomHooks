@@ -15,7 +15,7 @@
   </br>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-BADGE
+<a href="https://github.com/aromalanil/useCustomHooks/graphs/contributors"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=for-the-badge" /></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END --> 
 
   </div>
@@ -100,7 +100,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
+  <tr>
+    <td align="center"><a href="http://aromalanil.me"><img src="https://avatars1.githubusercontent.com/u/49222186?v=4" width="100px;" alt=""/><br /><sub><b>Aromal Anil</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=aromalanil" title="Documentation">📖</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=aromalanil" title="Code">💻</a> <a href="#maintenance-aromalanil" title="Maintenance">🚧</a></td>
+  </tr>
 </table>
+
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
