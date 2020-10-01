@@ -6,6 +6,17 @@
   "commit": false,
   "badgeTemplate": "<a href=\"https://github.com/aromalanil/useCustomHooks/graphs/contributors\"><img src=\"https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=for-the-badge\" /></a>",
   "contributors": [
+    {
+      "login": "aromalanil",
+      "name": "Aromal Anil",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/49222186?v=4",
+      "profile": "http://aromalanil.me",
+      "contributions": [
+        "doc",
+        "code",
+        "maintenance"
+      ]
+    }
   ],
   "contributorsPerLine": 7,
   "projectName": "useCustomHooks",
