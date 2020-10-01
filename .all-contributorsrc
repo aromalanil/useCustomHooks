@@ -1,17 +1,26 @@
 {
-  "files": ["README.md"],
+  "files": [
+    "README.md"
+  ],
   "imageSize": 100,
-  "contributorsPerLine": 7,
-  "contributorsSortAlphabetically": false,
+  "commit": false,
   "badgeTemplate": "<a href=\"https://github.com/aromalanil/useCustomHooks/graphs/contributors\"><img src=\"https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square\" /></a>",
-  "contributorTemplate": "<a href=\"<%= contributor.profile %>\"><img src=\"<%= contributor.avatar_url %>\" width=\"<%= options.imageSize %>px;\" alt=\"\"/><br /><sub><b><%= contributor.name %></b></sub></a>",
-  "types": {
-    "custom": {
-      "symbol": "🔭",
-      "description": "A custom contribution type.",
-      "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+  "contributors": [
+    {
+      "login": "aromalanil",
+      "name": "Aromal Anil",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/49222186?v=4",
+      "profile": "http://aromalanil.me",
+      "contributions": [
+        "doc",
+        "code"
+      ]
     }
-  },
-  "skipCi": "true",
-  "contributors": []
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "useCustomHooks",
+  "projectOwner": "aromalanil",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
