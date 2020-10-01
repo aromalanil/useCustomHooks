@@ -85,14 +85,14 @@ const LocalValue = () =>{
 }
 ```
 
-## :earth_americas: useGeolocalisation
+## :earth_americas: useGeolocation
 Get latitude and longitude positions from your browser
 
 ### Usage
 
 ```jsx
 import React from "react"
-import useGeolocalisation from "useGeolocalisation"
+import useGeolocation from "useGeolocation"
 
 const Home = () => {
   /*
@@ -105,12 +105,12 @@ const Home = () => {
   * 
   */
 
-  const [geolocalitation] = useGeolocalisation(true);
+  const [geolocation] = useGeolocation();
 
   return (
     <div>
-      {geolocalitation.latitude}
-      {geolocalitation.longitude}
+      {geolocation.latitude}
+      {geolocation.longitude}
     </div>
   );
 }
