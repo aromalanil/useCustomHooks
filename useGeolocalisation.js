@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
-/*
- * 
- * Custom useState hook which allow us to get the geolocalitation on your browser
- * 
+/** 
+ * Hook which allow us to get the geolocalisation from your browser
+ * @param {boolean} geolocation it is a boolean that request for browser permitions.
+ * @returns {Object} Object contains an object with the latitude and longitude.
  */
 
 const useGeolocalisation = (geolocation) => {
