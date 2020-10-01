@@ -33,7 +33,7 @@ import {useLocalStorage} from "useLocalStorage"
 const LocalValue = () =>{
   const [username,setUserName] = useLocalStorage("john_doe","username")
   /*
-   If username exist in localStorage, the value of username state will be
+   If username exists in localStorage, the value of username state will be
    localStorage.getItem("username"). If username doesn't exist in localStorage, 
    the value of the state will be "john-doe" and a new item will be created in
    localStorage will key "username"
@@ -48,7 +48,7 @@ const LocalValue = () =>{
 ```
 
 ## 🏀 useDebounce
-Convert a normal function to debounced function.
+Convert a normal function to a debounced function.
 
 > Note: More about Debouncing : [here]()
 
@@ -79,7 +79,7 @@ const LocalValue = () =>{
 }
 ```
 
-## 🤝🏻 Contibution
+## 🤝🏻 Contribution
 PRs are welcome.
 
 ### Guidelines
@@ -109,7 +109,7 @@ copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
