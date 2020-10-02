@@ -85,6 +85,37 @@ const LocalValue = () =>{
 }
 ```
 
+## :earth_americas: useGeolocation
+Get latitude and longitude positions from your browser
+
+### Usage
+
+```jsx
+import React from "react"
+import useGeoLocation from "useGeoLocation"
+
+const Home = () => {
+  /*
+  * The hook will return you an object like this: 
+  * 
+  * {
+  *   latitude: 1233234,
+  *   longitude: -1234345,
+  * }
+  * 
+  */
+
+  const [geolocation] = useGeoLocation();
+
+  return (
+    <div>
+      {geolocation.latitude}
+      {geolocation.longitude}
+    </div>
+  );
+}
+```
+
 ## 🤝🏻 Contribution
 PRs are welcome.
 
