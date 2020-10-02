@@ -1,6 +1,6 @@
 # Documentation
 
-## 📘 Available Hooks
+## 📗 Index
 
 - [useLocalStorage](#-uselocalstorage)
 - [useDebounce](#-usedebounce)
@@ -186,7 +186,7 @@ const Home = () => {
 ```
 
 
-# Contribution Guidlines
+# Contribution Guidelines
 Documentation for each hook should follow this template.
 
 ## Name
