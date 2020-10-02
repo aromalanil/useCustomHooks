@@ -50,6 +50,7 @@ yarn add use-custom-hooks
 - [useDebounce](#-usedebounce)
 - [useDarkMode](#-usedarkmode)
 - [useToggle](#-usetoggle)
+- [useMousePosition](#-usemousepointer)
 - [useGeoLocation](#-usegeolocation)
 
 ## 💾 useLocalStorage
@@ -156,6 +157,32 @@ const Mood = () =>{
     <h1>Hello World</div>
     <p>{ `The user is ${isHappy ? "Happy 😃" : "Sad 😢"}` }</p>
     <button onClick={toggleIsHappy}>Toggle</button>
+   </div>
+  );
+}
+```
+
+## 🖱 useMousePosition
+Returns an object with the current coordinates of the mouse pointer.
+
+### Usage
+
+```jsx
+import React from "react"
+import { useMousePointer } from "use-custom-hooks"
+
+const Mouse = () =>{
+  const {x,y} = useMousePosition();
+  /*
+    Using Object destructuring to get x & y coordinates
+    from mousePosition object.
+  */
+
+  return(
+   <div>
+    <h1>Mouse Pointer Location</div>
+    <p>The mouse pointer is at : {`(${x},${y})`}</p>
+    {/* The x,y coordinates will be updated as you move your mouse.*/}
    </div>
   );
 }
