@@ -50,7 +50,7 @@ yarn add use-custom-hooks
 - [useDebounce](#-usedebounce)
 - [useDarkMode](#-usedarkmode)
 - [useToggle](#-usetoggle)
-- [useMousePosition](#-usemousepointer)
+- [useMousePosition](#-usemouseposition)
 - [useGeoLocation](#-usegeolocation)
 
 ## 💾 useLocalStorage
