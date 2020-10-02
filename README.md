@@ -134,6 +134,31 @@ const App = () =>{
   );
 }
 ```
+## 🔘 useToggle
+Returns a boolean state and a state toggle function.
+
+### Usage
+
+```jsx
+import React from "react"
+import { useToggle } from "use-custom-hooks"
+
+const Mood = () =>{
+  const [isHappy,toggleIsHappy] = useToggle(true);
+  /*
+    If isHappy state is true calling toggleIsHappy function will set 
+    the isHappy state to false, and vise versa.
+  */
+
+  return(
+   <div>
+    <h1>Hello World</div>
+    <p>{ `The user is ${switchState ? "Happy 😃" : "Sad 😢"}` }</p>
+    <button onClick={toggleIsHappy}>Toggle</button>
+   </div>
+  );
+}
+```
 
 ## 🌎 useGeoLocation
 Get latitude and longitude positions from your browser
