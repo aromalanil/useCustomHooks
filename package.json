@@ -1,0 +1,27 @@
+{
+  "name": "use-custom-hooks",
+  "version": "1.0.0",
+  "description": "A collection of Custom Hooks for React.",
+  "main": "/hooks/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aromalanil/useCustomHooks.git"
+  },
+  "keywords": [
+    "custom-hooks",
+    "react",
+    "react-hooks",
+    "react-hook",
+    "custom-hook"
+  ],
+  "author": "Aromal Anil <contact@aromalanil.me> (https://aromalanil.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aromalanil/useCustomHooks/issues"
+  },
+  "homepage": "https://github.com/aromalanil/useCustomHooks#readme",
+  "dependencies": {
+    "react": "^16.13.1"
+  }
+}
