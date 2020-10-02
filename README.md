@@ -154,7 +154,7 @@ const Mood = () =>{
   return(
    <div>
     <h1>Hello World</div>
-    <p>{ `The user is ${switchState ? "Happy 😃" : "Sad 😢"}` }</p>
+    <p>{ `The user is ${isHappy ? "Happy 😃" : "Sad 😢"}` }</p>
     <button onClick={toggleIsHappy}>Toggle</button>
    </div>
   );
