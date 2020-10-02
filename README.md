@@ -48,6 +48,7 @@ yarn add use-custom-hooks
 
 - [useLocalStorage](#-useLocalStorage)
 - [useDebounce](#-useDebounce)
+- [useDarkMode](#-useDarkMode)
 - [useGeoLocation](#-useGeoLocation)
 
 ## 💾 useLocalStorage
@@ -103,6 +104,32 @@ const LocalValue = () =>{
   return(
    <div>
     Lorem Ipsum
+   </div>
+  );
+}
+```
+
+## 🌑 useDarkMode
+Let's you toggle dark-mode by adding and removing a className from/to
+the body. The user-preference is stored in localStorage.
+
+### Usage
+
+```jsx
+import React from "react"
+import { useDarkMode } from "use-custom-hooks"
+
+const App = () =>{
+  const [isDarkMode,toggleDarkMode] = useDarkMode("dark")
+  /*
+    "dark" is the class name to be added to the body.
+  */ 
+
+  return(
+   <div>
+    <h1>Hello World</div>
+    <button onClick={toggleDarkMode}>Toggle Dark-Mode</button>
+    {/* The class '.dark' is added to body when dark-mode, and removed when light-mode. */}
    </div>
   );
 }
