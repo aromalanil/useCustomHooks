@@ -25,6 +25,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "fernandoamz",
+      "name": "Fernando Amezcua",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7818620?v=4",
+      "profile": "https://github.com/fernandoamz",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
