@@ -49,6 +49,7 @@ yarn add use-custom-hooks
 - [useLocalStorage](#-uselocalstorage)
 - [useDebounce](#-usedebounce)
 - [useDarkMode](#-usedarkmode)
+- [useToggle](#-usetoggle)
 - [useGeoLocation](#-usegeolocation)
 
 ## 💾 useLocalStorage
