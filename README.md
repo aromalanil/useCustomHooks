@@ -46,10 +46,10 @@ yarn add use-custom-hooks
 
 ## 📘 Available Hooks
 
-- [useLocalStorage](#-useLocalStorage)
-- [useDebounce](#-useDebounce)
-- [useDarkMode](#-useDarkMode)
-- [useGeoLocation](#-useGeoLocation)
+- [useLocalStorage](#-uselocalstorage)
+- [useDebounce](#-usedebounce)
+- [useDarkMode](#-usedarkmode)
+- [useGeoLocation](#-usegeolocation)
 
 ## 💾 useLocalStorage
 Custom useState hook which saves the state value in localStorage
