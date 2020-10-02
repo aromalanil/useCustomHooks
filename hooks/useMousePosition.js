@@ -16,14 +16,19 @@ const useMousePosition = () => {
 
   useEffect(() => {
     //Event listener to track the mouse location.
-    window.addEventListener("mousemove", (e) => {
+    const eventHandler = (e) => {
       const mousePosition = {
         x: e.clientX,
         y: e.clientY,
       };
 
       setCoordinates(mousePosition);
-    });
+    };
+    window.addEventListener("mousemove", eventHandler);
+
+    return () => {
+      window.removeEventListener("mousemove", eventHandler);
+    };
   }, []);
 
   return coordinates;
