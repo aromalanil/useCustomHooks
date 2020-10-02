@@ -26,6 +26,7 @@
 
 - [useLocalStorage](#-useLocalStorage)
 - [useDebounce](#-useDebounce)
+- [useGeoLocation](#-useGeoLocation)
 
 ## 💾 useLocalStorage
 Custom useState hook which saves the state value in localStorage
@@ -85,7 +86,7 @@ const LocalValue = () =>{
 }
 ```
 
-## :earth_americas: useGeolocation
+## 🌎 useGeoLocation
 Get latitude and longitude positions from your browser
 
 ### Usage
@@ -104,13 +105,12 @@ const Home = () => {
   * }
   * 
   */
-
-  const [geolocation] = useGeoLocation();
+  const geoLocation = useGeoLocation();
 
   return (
     <div>
-      {geolocation.latitude}
-      {geolocation.longitude}
+      {geoLocation.latitude}
+      {geoLocation.longitude}
     </div>
   );
 }
