@@ -1,8 +1,8 @@
 {
   "name": "use-custom-hooks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of Custom Hooks for React.",
-  "main": "/hooks/index.js",
+  "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
