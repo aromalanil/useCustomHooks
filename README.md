@@ -1,6 +1,6 @@
 <div align="center">
     <h1>useCustomHooks</h1>
-    <p>A collection of custom hooks for your next React project.</p>
+    <p>A collection of custom hooks for your next React project as an npm package</p>
 	<br/>
 	<div align="center">
   <a href="https://github.com/aromalanil/useCustomHooks/commits/master">
@@ -9,8 +9,17 @@
 	<a href="https://github.com/aromalanil/useCustomHooks/issues">
 		<img alt="GitHub issues" src="https://img.shields.io/github/issues/aromalanil/useCustomHooks?style=for-the-badge">
 	</a>
-	<a href="https://github.com/aromalanil/useCustomHooks/commits/master">
-		<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/aromalanil/useCustomHooks?style=for-the-badge">
+	<a href= "https://www.npmjs.com/package/use-custom-hooks/">
+		<img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/use-custom-hooks?style=for-the-badge">
+	</a>
+        <a href= "https://www.npmjs.com/package/use-custom-hooks/v/latest">
+		<img alt="npm" src="https://img.shields.io/npm/v/use-custom-hooks?style=for-the-badge">
+	</a>
+	<a href= "https://www.npmjs.com/package/use-custom-hooks/">
+		<img alt="npm Downloads/Week" src="https://img.shields.io/npm/dw/use-custom-hooks?style=for-the-badge">
+	</a>
+	<a href="https://github.com/aromalanil/useCustomHooks/blob/master/LICENSE">
+		<img alt="GitHub License" src="https://img.shields.io/github/license/aromalanil/useCustomHooks?style=for-the-badge">
 	</a>
   </br>
 
@@ -21,6 +30,19 @@
   </div>
 </div>
 <br/>
+
+## 🧰 Installation
+
+### Using npm or yarn 📦
+
+```bash
+# Using npm
+npm i use-custom-hooks
+
+# Using yarn
+yarn add use-custom-hooks
+```
+
 
 ## 📘 Available Hooks
 
@@ -35,7 +57,7 @@ Custom useState hook which saves the state value in localStorage
 
 ```jsx
 import React from "react"
-import {useLocalStorage} from "useLocalStorage"
+import { useLocalStorage } from "use-custom-hooks"
 
 const LocalValue = () =>{
   const [username,setUserName] = useLocalStorage("john_doe","username")
@@ -64,7 +86,7 @@ Convert a normal function to a debounced function.
 
 ```jsx
 import React from "react"
-import {useDebounce} from "useDebounce"
+import { useDebounce } from "use-custom-hooks"
 
 const LocalValue = () =>{
    
@@ -93,7 +115,7 @@ Get latitude and longitude positions from your browser
 
 ```jsx
 import React from "react"
-import useGeoLocation from "useGeoLocation"
+import { useGeoLocation } from "use-custom-hooks"
 
 const Home = () => {
   /*
@@ -116,12 +138,12 @@ const Home = () => {
 }
 ```
 
-## 🤝🏻 Contribution
-PRs are welcome.
+## 🤝🏻 Contributing
+Please contribute using [GitHub Flow](https://guides.github.com/introduction/flow). Create a branch, add commits, and [open a pull request](https://github.com/aromalanil/useCustomHooks/compare).
 
 ### 📋 Guidelines
-- Create an issue before contributing
-- If you are contributing a custom hook, please explain the working or include an example, a [CodeSandBox](https://codesandbox.io/) link will be ideal.
+Please read [CONTRIBUTING](https://github.com/aromalanil/useCustomHooks/blob/master/CONTRIBUTING.md) for details and the process for submitting pull requests to us.
+
 
 ## Contributors ✨
 
@@ -147,29 +169,7 @@ Contributions of any kind are welcome!
 
 ## 📜 License
 
-```
-MIT License
-
-Copyright (c) 2020 Aromal Anil
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](https://github.com/aromalanil/useCustomHooks/blob/master/LICENSE) file for details.
 
 ## ✍🏻 Creator
 
