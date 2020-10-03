@@ -77,6 +77,17 @@ const LocalValue = () =>{
   );
 }
 ```
+### Parameters
+1. `inputFuction` (_any_) : Input Function of the state.
+2. `delay` (_String_) : delay for the debounce.
+
+### Return value
+
+`[Callback, setCallback]`
+
+1. `Callback` (_any_) : The created Callback.
+2. `setCallback` (_function_) : To exexute the function right after the some other function.
+
 
 ## 🌑 useDarkMode
 Let's you toggle dark-mode by adding and removing a className from/to
@@ -103,6 +114,18 @@ const App = () =>{
   );
 }
 ```
+### Parameters
+1. `className` (_any_) : Initial value of the state.
+
+
+### Return value
+
+`[state,setState]`
+
+1. `state` (_any_) : The created state.
+2. `setState` (_function_) : Function to change the state value.
+
+
 ## 🔘 useToggle
 Returns a boolean state and a state toggle function.
 
@@ -128,6 +151,17 @@ const Mood = () =>{
   );
 }
 ```
+### Parameters
+1. `initilValue` (_any_) : Initial value of the state.
+
+
+### Return value
+
+`[state,setState]`
+
+1. `state` (_any_) : The created state.
+2. `setState` (_function_) : Function to change the state value.
+
 
 ## 🖱 useMousePosition
 Returns an object with the current coordinates of the mouse pointer.
@@ -154,6 +188,17 @@ const Mouse = () =>{
   );
 }
 ```
+### Parameters
+ Null Parameter
+ 
+
+### Return value
+
+`[state]`
+
+1. `state` (_any_) : The created state.
+
+
 
 ## 🌎 useGeoLocation
 Get latitude and longitude positions from your browser
@@ -184,6 +229,16 @@ const Home = () => {
   );
 }
 ```
+### Parameters
+  Null Parameter
+
+### Return value
+
+`[state]`
+
+1. `state` (_any_) : The created state.
+
+
 
 
 # Contribution Guidelines
