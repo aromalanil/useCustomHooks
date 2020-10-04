@@ -35,6 +35,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "minimatrix",
+      "name": "Jonathan Carter",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/23636134?v=4",
+      "profile": "https://github.com/minimatrix",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
