@@ -9,6 +9,8 @@
 - [useToggle](#-usetoggle)
 - [useMousePosition](#-usemouseposition)
 - [useGeoLocation](#-usegeolocation)
+- [usePrevious](#-useprevious)
+
 
 ## 💾 useLocalStorage
 
@@ -224,6 +226,40 @@ const Home = () => {
   );
 };
 ```
+
+## 🕒 usePrevious
+
+Custom hook for retrieving the previous useState value
+
+### Usage
+
+```jsx
+function App() {
+  // normal usage of useState
+  const [visible, setVisible] = useState(false);
+  
+  // using the custom usePrevious hook to retrieve the value that was provided in the previous render
+  const prevVisibility = usePrevious(visible);
+  
+  // Display both current and previous visibility states
+  return (
+    <div>
+      <h1>Current visibility: {visible ? "visible":"not visible"}</h1>
+      <h1>Previous visibility: {prevVisibility ? "visible":"not visible"}</h1>
+      <button onClick={() => setVisible(!visible)}>Toggle Visibility</button>
+    </div>
+   );
+}
+```
+
+### Parameters
+
+1. `value` (_any_) : The current value (will be the previous value in the next render).
+
+### Return value
+
+1. `value` (_any_) : The previous state.
+
 
 # Contribution Guidelines
 
