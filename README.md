@@ -46,12 +46,12 @@ yarn add use-custom-hooks
 
 - [useStack](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usestack)
 - [useToggle](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usetoggle)
+- [usePrevious](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-useprevious)
 - [useDebounce](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usedebounce)
 - [useDarkMode](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usedarkmode)
 - [useGeoLocation](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usegeolocation)
 - [useLocalStorage](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-uselocalstorage)
 - [useMousePosition](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usemouseposition)
-- [usePrevious](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-useprevious)
 
 ## 📄 Documentation
 For documentaion, examples and other details refer [Documentation](https://github.com/aromalanil/useCustomHooks/tree/master/docs)

@@ -234,6 +234,9 @@ Custom hook for retrieving the previous useState value
 ### Usage
 
 ```jsx
+import React from "react";
+import { usePrevious } from "use-custom-hooks";
+
 function App() {
   // normal usage of useState
   const [visible, setVisible] = useState(false);
