@@ -44,13 +44,13 @@ yarn add use-custom-hooks
 ```
 ## 📘 Available Hooks
 
-- useStack
-- useToggle
-- useDebounce
-- useDarkMode
-- useGeoLocation
-- useLocalStorage
-- useMousePosition
+- [useStack](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usestack)
+- [useToggle](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usetoggle)
+- [useDebounce](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usedebounce)
+- [useDarkMode](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usedarkmode)
+- [useGeoLocation](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usegeolocation)
+- [useLocalStorage](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-uselocalstorage)
+- [useMousePosition](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usemouseposition)
 
 ## 📄 Documentation
 For documentaion, examples and other details refer [Documentation](https://github.com/aromalanil/useCustomHooks/tree/master/docs)
@@ -63,10 +63,13 @@ Please read [CONTRIBUTING](https://github.com/aromalanil/useCustomHooks/blob/mas
 
 Basic steps:
 1. [Open an issue](https://github.com/aromalanil/useCustomHooks/issues/new/choose) explaining the changes.
-2. Fork this repo.
 2. Work on the issue after you get assigned.
-3. [Open PR](https://github.com/aromalanil/useCustomHooks/compare) when the feature/fix is ready.
-4. The collaborators will review your PR and if approved will merge to the master.
+3. Fork this repo.
+4. Install the dependencies using `npm install`.
+5. Make the changes.
+6. Check for linting errors using `npm run lint`.
+7. [Open PR](https://github.com/aromalanil/useCustomHooks/compare) when the feature/fix is ready.
+8. The collaborators will review your PR and if approved will merge to the master.
 
 </br>
 
