@@ -44,6 +44,7 @@ yarn add use-custom-hooks
 ```
 ## 📘 Available Hooks
 
+- useStack
 - useToggle
 - useDebounce
 - useDarkMode

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 /**
  * @typedef {Object} MousePosition
@@ -15,7 +15,7 @@ const useMousePosition = () => {
   const [coordinates, setCoordinates] = useState({});
 
   useEffect(() => {
-    //Event listener to track the mouse location.
+    // Event listener to track the mouse location.
     const eventHandler = (e) => {
       const mousePosition = {
         x: e.clientX,
@@ -24,10 +24,10 @@ const useMousePosition = () => {
 
       setCoordinates(mousePosition);
     };
-    window.addEventListener("mousemove", eventHandler);
+    window.addEventListener('mousemove', eventHandler);
 
     return () => {
-      window.removeEventListener("mousemove", eventHandler);
+      window.removeEventListener('mousemove', eventHandler);
     };
   }, []);
 

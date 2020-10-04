@@ -2,3 +2,5 @@
 .github
 CONTRIBUTING.md
 docs
+.eslintrc.json
+.prettierrc
