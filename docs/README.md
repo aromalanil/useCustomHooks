@@ -244,7 +244,8 @@ function App() {
   // Display both current and previous visibility states
   return (
     <div>
-      <h1>Current visibility: {visibility}, previous visibility: {prevVisibility}</h1>
+      <h1>Current visibility: {visible ? "visible":"not visible"}</h1>
+      <h1>Previous visibility: {prevVisibility ? "visible":"not visible"}</h1>
       <button onClick={() => setVisible(!visible)}>Toggle Visibility</button>
     </div>
    );
@@ -256,8 +257,6 @@ function App() {
 1. `value` (_any_) : The current value (will be the previous value in the next render).
 
 ### Return value
-
-`[value]`
 
 1. `value` (_any_) : The previous state.
 

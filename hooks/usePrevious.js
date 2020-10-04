@@ -6,13 +6,15 @@ import { useEffect, useRef } from 'react';
  * @param {*} value Initial value of the state.
  */
 const usePrevious = (value) => {
-    const ref = useRef();
-    
-    useEffect(() => {
-      ref.current = value;
-    }, [value]);
+  // The ref object is a generic container whose current property is mutable ...
+  // ... and can hold any value, similar to an instance property on a class
+  const ref = useRef();
 
-    return ref.current;
-}
+  // Store current value in ref
+  useEffect(() => {
+    ref.current = value;
+  }, [value]);
 
+  return ref.current;
+};
 export default usePrevious;
