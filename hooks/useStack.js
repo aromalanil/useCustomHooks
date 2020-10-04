@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 /**
  * Custom hook for creating and managing Stack.
@@ -28,11 +28,12 @@ const useStack = (initialValue) => {
    */
   const pop = () => {
     if (stack.length > 0) {
-      let newStack = [...stack];
+      const newStack = [...stack];
       const poppedValue = newStack.pop();
       setStack(newStack);
       return poppedValue;
-    } else return undefined;
+    }
+    return undefined;
   };
 
   return [stack, push, pop];

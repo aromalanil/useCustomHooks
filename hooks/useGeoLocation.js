@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 /**
  * @typedef {Object} GeoLocation
@@ -13,7 +13,7 @@ import { useState, useEffect } from "react";
 const useGeoLocation = () => {
   const [geoLocation, setGeoLocation] = useState({});
 
-  //Only called on ComponentDidMount
+  // Only called on ComponentDidMount
   useEffect(() => {
     // Checking if device supports geolocation
     if (navigator.geolocation) {
@@ -28,7 +28,7 @@ const useGeoLocation = () => {
         setGeoLocation(userPosition);
       });
     } else {
-      throw new Error("The browser does not support geolocation");
+      throw new Error('The browser does not support geolocation');
     }
   }, []);
 

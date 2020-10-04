@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback } from 'react';
 
 /**
  * Debounce function generator.
@@ -6,9 +6,9 @@ import { useCallback } from "react";
  * @param {number} delay The time delay in milliseconds.
  * @returns {function} The modified function.
  */
-function _debounce(inputFunction, delay) {
+function debounce(inputFunction, delay) {
   let timeout;
-  return function (...args) {
+  return (...args) => {
     const context = this;
     if (timeout) clearTimeout(timeout);
     timeout = setTimeout(() => {
@@ -26,6 +26,6 @@ function _debounce(inputFunction, delay) {
  * @param {number} delay The time delay in milliseconds.
  * @returns {function} The modified function.
  */
-const useDebounce = (inputFunction, delay) =>  useCallback(_debounce(inputFunction, delay), []);
+const useDebounce = (inputFunction, delay) => useCallback(debounce(inputFunction, delay), []);
 
 export default useDebounce;
