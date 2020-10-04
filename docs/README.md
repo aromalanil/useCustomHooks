@@ -227,7 +227,7 @@ const Home = () => {
 };
 ```
 
-## 🕒usePrevious
+## 🕒 usePrevious
 
 Custom hook for retrieving the previous useState value
 
