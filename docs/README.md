@@ -11,6 +11,7 @@
 - [useGeoLocation](#-usegeolocation)
 - [usePrevious](#-useprevious)
 
+</br>
 
 ## 💾 useLocalStorage
 
@@ -46,6 +47,8 @@ const LocalValue = () => {
 
 1. `state` (_any_) : The created state.
 2. `setState` (_function_) : Function to change the state value.
+
+</br>
 
 ## 📚 useStack
 Hook for creating and managing Stack.
@@ -88,6 +91,8 @@ const LocalValue = () => {
 2. `push` (_function_) : Function to add an element to the end of the stack.
 3. `pop` (_function_) : Function to remove last element from the stack.
 
+</br>
+
 ## 🏀 useDebounce
 
 Convert a normal function to a debounced function.
@@ -114,6 +119,20 @@ const LocalValue = () => {
   return <div>Lorem Ipsum</div>;
 };
 ```
+
+### Parameters
+
+`[inputFunction,delay]`
+
+1. `inputFunction` (_function_) : Function which is to be modified.
+2. `delay` (_number_) : The time delay in milliseconds.
+
+### Return value
+
+`debouncedFunction` (_function_) : The modified function.
+
+
+</br>
 
 ## 🌑 useDarkMode
 
@@ -142,6 +161,19 @@ const App = () => {
 };
 ```
 
+### Parameters
+
+`className` (_String_) : Class name which is to be added to body when dark mode.
+
+### Return value
+
+`isDarkMode, darkModeToggle`
+
+1. `isDarkMode` (_boolean_) : State indicating dark mode.
+2. `darkModeToggle` (_function_) : Function to toggle dark mode.
+
+</br>
+
 ## 🔘 useToggle
 
 Returns a boolean state and a state toggle function.
@@ -169,6 +201,19 @@ const Mood = () => {
 };
 ```
 
+### Parameters
+
+1. `initialValue` (_boolean_) : Initial value of the state.
+
+### Return value
+
+`[state,toggleFunction]`
+
+1. `state` (_boolean_) : The booelan state.
+2. `toggleFunction` (_function_) : Function to toggle the state value.
+
+</br>
+
 ## 🖱 useMousePosition
 
 Returns an object with the current coordinates of the mouse pointer.
@@ -195,6 +240,18 @@ const Mouse = () => {
   );
 };
 ```
+### Parameters
+
+None : This hooks takes no parameters.
+
+### Return value
+
+`{x,y}`
+
+1. `x` (_number_) : X Coordinate of the mouse.
+2. `y` (_number_) : Y Coordinate of the mouse.
+
+</br>
 
 ## 🌎 useGeoLocation
 
@@ -227,6 +284,19 @@ const Home = () => {
 };
 ```
 
+### Parameters
+
+None : This hooks takes no parameters.
+
+### Return value
+
+`{latitude, longitude}`
+
+1. `latitude` (_number_) : Latitude coordinate of the user.
+2. `longitude` (_number_) : Longitude coordinate of the user.
+
+</br>
+
 ## 🕒 usePrevious
 
 Custom hook for retrieving the previous useState value
@@ -257,11 +327,13 @@ function App() {
 
 ### Parameters
 
-1. `value` (_any_) : The current value (will be the previous value in the next render).
+`presentState` (_any_) : The current value (will be the previous value in the next render).
 
 ### Return value
 
-1. `value` (_any_) : The previous state.
+`previousState` (_any_) : The previous state.
+
+</br>
 
 
 # Contribution Guidelines
