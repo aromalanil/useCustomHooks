@@ -4,6 +4,7 @@
 
 - [useLocalStorage](#-uselocalstorage)
 - [useStack](#-usestack)
+- [useQueue](#-usequeue)
 - [useDebounce](#-usedebounce)
 - [useDarkMode](#-usedarkmode)
 - [useToggle](#-usetoggle)
@@ -90,6 +91,42 @@ const LocalValue = () => {
 1. `stack` (_Array_) : The created stack.
 2. `push` (_function_) : Function to add an element to the end of the stack.
 3. `pop` (_function_) : Function to remove last element from the stack.
+
+</br>
+
+## 🛒 useQueue
+Very similar to useStack, this hook creates and manages queues.
+
+### Usage
+
+```jsx
+import React from 'react';
+import { useQueue } from 'use-custom-hooks';
+
+function Queue() {
+  const [queue, enqueue, dequeue] = useQueue([]);
+  const generateNumber = () => Math.round(Math.random()*100);
+  return (
+    <div>
+      <h1>{queue.map(item => ` ${item} `)}</h1>
+      <button onClick={() => enqueue(generateNumber())}>Enqueue</button>
+      <button onClick={dequeue}>Dequeue</button>
+    </div>
+  );
+}
+```
+
+### Parameters
+
+1. `initialValue` (_Array_) : Initial value of the queue.
+
+### Return value
+
+`[queue,enqueue,dequeue]`
+
+1. `queue` (_Array_) : The created queue.
+2. `enqueue` (_function_) : Function to add an element to the rear of the queue.
+3. `dequeue` (_function_) : Function to remove last element from the queue.
 
 </br>
 
