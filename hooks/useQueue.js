@@ -27,7 +27,7 @@ const useQueue = (initialValue) => {
   const dequeue = () => {
     if (queue.length > 0) {
       const newQueue = [...queue];
-      const dequeuedValue = newQueue.pop();
+      const dequeuedValue = newQueue.shift();
       setQueue(newQueue);
       return dequeuedValue;
     }
