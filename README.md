@@ -45,6 +45,7 @@ yarn add use-custom-hooks
 ## 📘 Available Hooks
 
 - [useStack](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usestack)
+- [useQueue](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usequeue)
 - [useToggle](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usetoggle)
 - [usePrevious](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-useprevious)
 - [useDebounce](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usedebounce)
