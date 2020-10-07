@@ -16,7 +16,7 @@ const useQueue = (initialValue) => {
    * @returns {undefined} This function returns nothing.
    */
   const enqueue = (value) => {
-    setQueue([value, ...queue]);
+    setQueue([...queue, value]);
   };
 
   /**
