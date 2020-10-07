@@ -24,7 +24,7 @@
   </br>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href="https://github.com/aromalanil/useCustomHooks/graphs/contributors"><img src="https://img.shields.io/badge/all_contributors-4-orange.svg?style=for-the-badge" /></a>
+<a href="https://github.com/aromalanil/useCustomHooks/graphs/contributors"><img src="https://img.shields.io/badge/all_contributors-5-orange.svg?style=for-the-badge" /></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END --> 
 
   </div>
@@ -88,6 +88,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://www.rahulmahesh.me/"><img src="https://avatars3.githubusercontent.com/u/41413029?v=4" width="100px;" alt=""/><br /><sub><b>Rahul Mahesh</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=RahulMahesh62" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/fernandoamz"><img src="https://avatars3.githubusercontent.com/u/7818620?v=4" width="100px;" alt=""/><br /><sub><b>Fernando Amezcua</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=fernandoamz" title="Code">💻</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=fernandoamz" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/minimatrix"><img src="https://avatars1.githubusercontent.com/u/23636134?v=4" width="100px;" alt=""/><br /><sub><b>Jonathan Carter</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=minimatrix" title="Code">💻</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=minimatrix" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/MuriloucoLouco"><img src="https://avatars1.githubusercontent.com/u/58440129?v=4" width="100px;" alt=""/><br /><sub><b>Murilo Leandro</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=MuriloucoLouco" title="Code">💻</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=MuriloucoLouco" title="Documentation">📖</a></td>
   </tr>
 </table>
 
