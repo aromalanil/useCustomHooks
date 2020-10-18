@@ -11,6 +11,7 @@
 - [useMousePosition](#-usemouseposition)
 - [useGeoLocation](#-usegeolocation)
 - [usePrevious](#-useprevious)
+- [useViewport](#-useviewport)
 
 </br>
 
@@ -372,6 +373,49 @@ function App() {
 
 </br>
 
+<br>
+
+## 🖥 useViewport
+
+Returns an object with the current width of the viewport and the type of device.
+
+### Usage
+
+```jsx
+import React from "react";
+import MobileComponent from ".Example/MobileComponent";
+import TabletComponent from ".Example/TabletComponent";
+import DesktopComponent from ".Example/DesktopComponent";
+import { useViewport, MOBILE, TABLET } from "use-custom-hooks";
+
+const Screen = () => {
+  const { viewport } = useViewport();
+  /*
+    Using Object destructuring we can get width and device
+    from viewport object.
+  */
+
+  if (viewport.device === MOBILE) {
+    return <MobileComponent />;
+  } else if (viewport.device === TABLET) {
+    return <TabletComponent />;
+  } else {
+    return <DesktopComponent />;
+  }
+};
+```
+### Parameters
+
+None : This hooks takes no parameters.
+
+### Return value
+
+`{width,device}`
+
+1. `width` (_number_) : Current width of the viewport.
+2. `device` (_string_) : Device type.
+
+<br>
 
 # Contribution Guidelines
 
