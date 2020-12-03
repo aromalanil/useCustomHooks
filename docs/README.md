@@ -3,6 +3,7 @@
 ## 📗 Index
 
 - [useLocalStorage](#-uselocalstorage)
+- [useForm](#-useform)
 - [useStack](#-usestack)
 - [useQueue](#-usequeue)
 - [useDebounce](#-usedebounce)
@@ -50,6 +51,42 @@ const LocalValue = () => {
 2. `setState` (_function_) : Function to change the state value.
 
 </br>
+
+## 📃 useForm
+
+Custom hook to create controlled form component.
+
+### Usage
+
+```jsx
+import React from "react";
+import { useForm } from "use-custom-hooks";
+
+const Form = () => {
+  const [values, onChange] = useLocalStorage({name:"",age:12});
+
+  return (
+    <form>
+      <input type="text" name="name" value={values.name} onChange={onChange}/>
+      <input type="number" name="age" value={values.age} onChange={onChange}/>
+    </form>
+  );
+};
+```
+
+### Parameters
+
+1. `initialValue` (_Object_) : State object with name of each form input as keys and corresponding initial state as values.
+
+### Return value
+
+`[values,onChange]`
+
+1. `values` (_Object_) : Values of input components.
+2. `onChange` (_function_) : Function to be added to onChange event of input component.
+
+</br>
+
 
 ## 📚 useStack
 Hook for creating and managing Stack.
