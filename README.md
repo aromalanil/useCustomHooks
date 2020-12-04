@@ -44,6 +44,7 @@ yarn add use-custom-hooks
 ```
 ## 📘 Available Hooks
 
+- [useForm](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-useForm)
 - [useStack](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usestack)
 - [useQueue](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usequeue)
 - [useToggle](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usetoggle)
@@ -55,7 +56,7 @@ yarn add use-custom-hooks
 - [useMousePosition](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usemouseposition)
 
 ## 📄 Documentation
-For documentaion, examples and other details refer [Documentation](https://github.com/aromalanil/useCustomHooks/tree/master/docs)
+For documentation, examples and other details refer [Documentation](https://github.com/aromalanil/useCustomHooks/tree/master/docs)
 
 
 ## 🤝🏻 Contributing
