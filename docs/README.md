@@ -63,7 +63,7 @@ import React from "react";
 import { useForm } from "use-custom-hooks";
 
 const Form = () => {
-  const [values, onChange] = useLocalStorage({name:"",age:12});
+  const [values, onChange] = useForm({name:"",age:12});
 
   return (
     <form>
