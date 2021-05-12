@@ -8,3 +8,4 @@ export { default as useDebounce } from './hooks/useDebounce';
 export { default as useGeoLocation } from './hooks/useGeoLocation';
 export { default as useLocalStorage } from './hooks/useLocalStorage';
 export { default as useMousePosition } from './hooks/useMousePosition';
+export { default as useOfflineStatus } from './hooks/useOfflineStatus';
