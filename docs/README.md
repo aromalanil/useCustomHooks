@@ -12,6 +12,7 @@
 - [useMousePosition](#-usemouseposition)
 - [useGeoLocation](#-usegeolocation)
 - [usePrevious](#-useprevious)
+- [useOfflineStatus](#-useofflinestatus)
 
 </br>
 
@@ -406,6 +407,33 @@ function App() {
 ### Return value
 
 `previousState` (_any_) : The previous state.
+
+</br>
+
+## 📴 useOfflineStatus
+
+Returns a boolean state which represents if the device is offline
+
+### Usage
+
+```jsx
+import React from "react";
+import { useOfflineStatus } from "use-custom-hooks";
+
+const LocalValue = () => {
+  const isDeviceOffline = useOfflineStatus();
+
+  return <p>Device is currently {isDeviceOffline ? "Offline" : "Online"}</p>;
+};
+```
+
+### Parameters
+
+None : This hooks takes no parameters.
+
+### Return value
+
+`isDeviceOffline` (_boolean_) : A state representing if device is offline.
 
 </br>
 

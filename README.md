@@ -54,6 +54,7 @@ yarn add use-custom-hooks
 - [useGeoLocation](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usegeolocation)
 - [useLocalStorage](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-uselocalstorage)
 - [useMousePosition](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usemouseposition)
+- [useOfflineStatus](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-useofflinestatus)
 
 ## 📄 Documentation
 For documentation, examples and other details refer [Documentation](https://github.com/aromalanil/useCustomHooks/tree/master/docs)
