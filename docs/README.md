@@ -67,7 +67,7 @@ import { useMediaQuery } from "use-custom-hooks";
 const BottomNav = () => {
   const isMobileDevice = useMediaQuery("(max-width:600px)");
   /*
-   If isMobileDevice will be true when the screen size is less than
+   isMobileDevice will be true when the screen size is less than
    600px, and false otherwise
   */
 
