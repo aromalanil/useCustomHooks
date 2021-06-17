@@ -3,6 +3,7 @@
 ## 📗 Index
 
 - [useLocalStorage](#-uselocalstorage)
+- [useMediaQuery](#-usemediaquery)
 - [useForm](#-useform)
 - [useStack](#-usestack)
 - [useQueue](#-usequeue)
@@ -50,6 +51,38 @@ const LocalValue = () => {
 
 1. `state` (_any_) : The created state.
 2. `setState` (_function_) : Function to change the state value.
+
+</br>
+
+## 📱 useMediaQuery
+
+Custom hook which listens for a media query and updates the state when the query is active/inactive
+
+### Usage
+
+```jsx
+import React from "react";
+import { useMediaQuery } from "use-custom-hooks";
+
+const BottomNav = () => {
+  const isMobileDevice = useMediaQuery("(max-width:600px)");
+  /*
+   If isMobileDevice will be true when the screen size is less than
+   600px, and false otherwise
+  */
+
+  // Component will only be rendered in mobile devices
+  return isMobileDevice ? <div className="bottom-nav"></div> : null;
+};
+```
+
+### Parameters
+
+1. `mediaQuery` (_String_) : The media query to listen to.
+
+### Return value
+
+1. `isMediaQueryActive` (_any_) : A boolean state denoting if the media query is active or not
 
 </br>
 

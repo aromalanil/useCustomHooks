@@ -51,6 +51,7 @@ yarn add use-custom-hooks
 - [usePrevious](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-useprevious)
 - [useDebounce](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usedebounce)
 - [useDarkMode](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usedarkmode)
+- [useMediaQuery](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usemediaquery)
 - [useGeoLocation](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usegeolocation)
 - [useLocalStorage](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-uselocalstorage)
 - [useMousePosition](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usemouseposition)
@@ -129,4 +130,4 @@ SOFTWARE.
 
 ## ✍🏻 Creator
 
-[Aromal Anil](https://aromalanil.me)
+[Aromal Anil](https://aromalanil.tech)
