@@ -87,7 +87,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://aromalanil.me"><img src="https://avatars1.githubusercontent.com/u/49222186?v=4" width="100px;" alt=""/><br /><sub><b>Aromal Anil</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=aromalanil" title="Documentation">📖</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=aromalanil" title="Code">💻</a> <a href="#maintenance-aromalanil" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="http://aromalanil.in"><img src="https://avatars1.githubusercontent.com/u/49222186?v=4" width="100px;" alt=""/><br /><sub><b>Aromal Anil</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=aromalanil" title="Documentation">📖</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=aromalanil" title="Code">💻</a> <a href="#maintenance-aromalanil" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://www.rahulmahesh.me/"><img src="https://avatars3.githubusercontent.com/u/41413029?v=4" width="100px;" alt=""/><br /><sub><b>Rahul Mahesh</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=RahulMahesh62" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/fernandoamz"><img src="https://avatars3.githubusercontent.com/u/7818620?v=4" width="100px;" alt=""/><br /><sub><b>Fernando Amezcua</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=fernandoamz" title="Code">💻</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=fernandoamz" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/minimatrix"><img src="https://avatars1.githubusercontent.com/u/23636134?v=4" width="100px;" alt=""/><br /><sub><b>Jonathan Carter</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=minimatrix" title="Code">💻</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=minimatrix" title="Documentation">📖</a></td>
@@ -130,4 +130,4 @@ SOFTWARE.
 
 ## ✍🏻 Creator
 
-[Aromal Anil](https://aromalanil.tech)
+[Aromal Anil](https://aromalanil.in)
