@@ -26,9 +26,9 @@ const useClickOutside = (initialValue) => {
 
   React.useEffect(() => {
     // Event listener to track the component activity.
-    document.addEventListener("clickedOutside", clickOutside, true);
+    document.addEventListener("click", clickOutside, true);
     return () => {
-      document.removeEventListener("clickedOutside", clickOutside, true);
+      document.removeEventListener("click", clickOutside, true);
     };
   }, []);
 
