@@ -15,19 +15,19 @@ import React from 'react';
  */
 const useClickOutside = (initialValue) => {
   const [wasClicked, setWasClicked] = React.useState(initialValue);
-  const myRef = React.useRef(null)
+  const myRef = React.useRef(null);
 
   const clickOutside = (event) => {
-    if (myRef.current && !myRef.current.contains(event.target)){
-        setWasClicked(false);
+    if (myRef.current && !myRef.current.contains(event.target)) {
+      setWasClicked(false);
     }
-  }
+  };
 
   React.useEffect(() => {
     // Event listener to track the component activity.
-    document.addEventListener("click", clickOutside, true);
+    document.addEventListener('click', clickOutside, true);
     return () => {
-      document.removeEventListener("click", clickOutside, true);
+      document.removeEventListener('click', clickOutside, true);
     };
   }, []);
 
