@@ -14,6 +14,8 @@
 - [useGeoLocation](#-usegeolocation)
 - [usePrevious](#-useprevious)
 - [useOfflineStatus](#-useofflinestatus)
+- [useClickOutside](#-useclickoutside)
+- 
 
 </br>
 
@@ -467,6 +469,83 @@ None : This hooks takes no parameters.
 ### Return value
 
 `isDeviceOffline` (_boolean_) : A state representing if device is offline.
+
+</br>
+
+## 👆 useClickOutside
+
+Custom hook which listens for a click event happened outside of a component.
+
+### Usage
+
+```jsx
+import React from "react";
+import { useClickOutside } from "use-custom-hooks";
+
+const EditUser = () => {
+  const {
+      myRef,
+      wasClicked
+    } = useClickOutside(true);
+
+  const [state, setState] = React.useState({value: ""})
+
+  const handleChange = (event) => {
+    setState({value: event.target.value})
+  }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    await fetch("yourUrl", {
+      body: JSON.stringify(state.value),
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then((res) => {
+      // Error handling
+    }); 
+  }
+
+  React.useEffect(() => {
+    return () => {
+      if (wasClicked && document.getElementById("username")) {
+        onSubmit({
+          username: document.getElementById("username").value,
+        });
+      }
+    };
+  }, [wasClicked]);
+
+  /* 
+   The form will post the input data when the use
+   clicks outisde of the parent div
+  */
+  return (<div>
+            <form onSubmit={handleSubmit}>
+              <div ref={ref}>
+                <input
+                  id="username"
+                  value={state}
+                  onChange={handleChange}
+                />
+              </div>
+            </form>
+          </div>)
+};
+```
+
+### Parameters
+
+1. `initialValue` (__boolean__) : The value determines, if the component is selected or whether the user clicks outside
+
+### Return value
+
+1. `ref` (__interface RefObject<T> {
+  readonly current: T | null;
+}__) : The reference to the DOM element.
+
+2. `wasClicked` (__boolean__) : The value determines, if the component is selected or whether the user clicks outside
 
 </br>
 

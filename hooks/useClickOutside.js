@@ -4,7 +4,6 @@ import React from 'react';
  * @typedef {Object} ElementRef
  * @property {myRef} - reference to the DOM element
  * @property {wasClicked} - state
- * @property {setWasClicked} - setter of the state
  */
 
 /**
@@ -32,7 +31,7 @@ const useClickOutside = (initialValue) => {
     };
   }, []);
 
-  return { myRef, wasClicked, setWasClicked };
+  return { myRef, wasClicked };
 };
 
 export default useClickOutside;
