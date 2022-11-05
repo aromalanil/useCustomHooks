@@ -15,7 +15,6 @@
 - [usePrevious](#-useprevious)
 - [useOfflineStatus](#-useofflinestatus)
 - [useClickOutside](#-useclickoutside)
-- 
 
 </br>
 
@@ -480,64 +479,24 @@ Custom hook which listens for a click event happened outside of a component.
 
 ```jsx
 import React from "react";
-import { useClickOutside } from "use-custom-hooks";
+import {useClickOutside} from "use-custom-hooks";
 
-const EditUser = () => {
-  const {
-      myRef,
-      wasClicked
-    } = useClickOutside(true);
-
-  const [state, setState] = React.useState({value: ""})
-
-  const handleChange = (event) => {
-    setState({value: event.target.value})
-  }
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    await fetch("yourUrl", {
-      body: JSON.stringify(state.value),
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }).then((res) => {
-      // Error handling
-    }); 
-  }
-
-  React.useEffect(() => {
-    return () => {
-      if (wasClicked && document.getElementById("username")) {
-        onSubmit({
-          username: document.getElementById("username").value,
-        });
-      }
-    };
-  }, [wasClicked]);
-
-  /* 
-   The form will post the input data when the use
-   clicks outisde of the parent div
-  */
-  return (<div>
-            <form onSubmit={handleSubmit}>
-              <div ref={ref}>
-                <input
-                  id="username"
-                  value={state}
-                  onChange={handleChange}
-                />
-              </div>
-            </form>
-          </div>)
+const CustomButton = () => {
+  const { myRef, wasClicked, setWasClicked } = useClickOutside();
+  return (
+    <div ref={myRef}>
+      <button onClick={() => setWasClicked(false)}>
+        {wasClicked ? "Not-active" : "Active"}
+      </button>
+    </div>
+  );
 };
+
 ```
 
 ### Parameters
 
-1. `initialValue` (__boolean__) : The value determines, if the component is selected or whether the user clicks outside
+None : This hooks takes no parameters.
 
 ### Return value
 
@@ -545,7 +504,9 @@ const EditUser = () => {
   readonly current: T | null;
 }__) : The reference to the DOM element.
 
-2. `wasClicked` (__boolean__) : The value determines, if the component is selected or whether the user clicks outside
+2. `wasClicked` (__boolean__) : The value determines, if the component is selected or whether the user clicks outside.
+
+3. `setWasClicked` (__React.Dispatch<React.SetStateAction<boolean>>__) : The dispatcher of the wasClicked state.
 
 </br>
 
