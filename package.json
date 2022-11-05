@@ -1,6 +1,6 @@
 {
   "name": "use-custom-hooks",
-  "version": "1.10.2",
+  "version": "1.10.3",
   "description": "A collection of Custom Hooks for React.",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,7 @@
     "react": "^16.x"
   },
   "devDependencies": {
+    "react": "^16.x",
     "eslint": "^7.2.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.12.0",
