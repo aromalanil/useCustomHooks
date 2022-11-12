@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 /**
  * @typedef {Object} ElementRef
@@ -12,7 +12,8 @@ import React from "react";
  * Custom hook which return an object with the refence to the DOM element,
  * the state and the setter of the state.
  * @param {boolean} initialValue Initial value of the state.
- * @return {ElementRef} Object containing the ref of the DOM element, the click state and its setter.
+ * @return {ElementRef} Object containing the ref of the DOM element,
+ *  the click state and its setter.
  */
 const useClickOutside = () => {
   const [wasClicked, setWasClicked] = React.useState(false);
@@ -26,9 +27,9 @@ const useClickOutside = () => {
 
   React.useEffect(() => {
     // Event listener to track the component activity.
-    document.addEventListener("click", clickOutside);
+    document.addEventListener('click', clickOutside);
     return () => {
-      document.removeEventListener("click", clickOutside);
+      document.removeEventListener('click', clickOutside);
     };
   }, []);
 
