@@ -24,7 +24,7 @@
   </br>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href="https://github.com/aromalanil/useCustomHooks/graphs/contributors"><img src="https://img.shields.io/badge/all_contributors-5-orange.svg?style=for-the-badge" /></a>
+<a href="https://github.com/aromalanil/useCustomHooks/graphs/contributors"><img src="https://img.shields.io/badge/all_contributors-6-orange.svg?style=for-the-badge" /></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END --> 
 
   </div>
@@ -86,17 +86,21 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="http://aromalanil.in"><img src="https://avatars1.githubusercontent.com/u/49222186?v=4" width="100px;" alt=""/><br /><sub><b>Aromal Anil</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=aromalanil" title="Documentation">📖</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=aromalanil" title="Code">💻</a> <a href="#maintenance-aromalanil" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://www.rahulmahesh.me/"><img src="https://avatars3.githubusercontent.com/u/41413029?v=4" width="100px;" alt=""/><br /><sub><b>Rahul Mahesh</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=RahulMahesh62" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/fernandoamz"><img src="https://avatars3.githubusercontent.com/u/7818620?v=4" width="100px;" alt=""/><br /><sub><b>Fernando Amezcua</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=fernandoamz" title="Code">💻</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=fernandoamz" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/minimatrix"><img src="https://avatars1.githubusercontent.com/u/23636134?v=4" width="100px;" alt=""/><br /><sub><b>Jonathan Carter</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=minimatrix" title="Code">💻</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=minimatrix" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/MuriloucoLouco"><img src="https://avatars1.githubusercontent.com/u/58440129?v=4" width="100px;" alt=""/><br /><sub><b>Murilo Leandro</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=MuriloucoLouco" title="Code">💻</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=MuriloucoLouco" title="Documentation">📖</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center"><a href="http://aromalanil.in"><img src="https://avatars1.githubusercontent.com/u/49222186?v=4?s=100" width="100px;" alt="Aromal Anil"/><br /><sub><b>Aromal Anil</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=aromalanil" title="Documentation">📖</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=aromalanil" title="Code">💻</a> <a href="#maintenance-aromalanil" title="Maintenance">🚧</a></td>
+      <td align="center"><a href="https://www.rahulmahesh.me/"><img src="https://avatars3.githubusercontent.com/u/41413029?v=4?s=100" width="100px;" alt="Rahul Mahesh"/><br /><sub><b>Rahul Mahesh</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=RahulMahesh62" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/fernandoamz"><img src="https://avatars3.githubusercontent.com/u/7818620?v=4?s=100" width="100px;" alt="Fernando Amezcua"/><br /><sub><b>Fernando Amezcua</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=fernandoamz" title="Code">💻</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=fernandoamz" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/minimatrix"><img src="https://avatars1.githubusercontent.com/u/23636134?v=4?s=100" width="100px;" alt="Jonathan Carter"/><br /><sub><b>Jonathan Carter</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=minimatrix" title="Code">💻</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=minimatrix" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/MuriloucoLouco"><img src="https://avatars1.githubusercontent.com/u/58440129?v=4?s=100" width="100px;" alt="Murilo Leandro"/><br /><sub><b>Murilo Leandro</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=MuriloucoLouco" title="Code">💻</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=MuriloucoLouco" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://www.youtube.com/@teamevancodes"><img src="https://avatars.githubusercontent.com/u/96417438?v=4?s=100" width="100px;" alt="Evangelos Charalampidis"/><br /><sub><b>Evangelos Charalampidis</b></sub></a><br /><a href="https://github.com/aromalanil/useCustomHooks/commits?author=imevanc" title="Code">💻</a> <a href="https://github.com/aromalanil/useCustomHooks/commits?author=imevanc" title="Documentation">📖</a></td>
+    </tr>
+  </tbody>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://allcontributors.org) specification.
