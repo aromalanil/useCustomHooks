@@ -14,6 +14,7 @@
 - [useGeoLocation](#-usegeolocation)
 - [usePrevious](#-useprevious)
 - [useOfflineStatus](#-useofflinestatus)
+- [useClickOutside](#-useclickoutside)
 
 </br>
 
@@ -467,6 +468,45 @@ None : This hooks takes no parameters.
 ### Return value
 
 `isDeviceOffline` (_boolean_) : A state representing if device is offline.
+
+</br>
+
+## 👆 useClickOutside
+
+Custom hook which listens for a click event happened outside of a component.
+
+### Usage
+
+```jsx
+import React from "react";
+import {useClickOutside} from "use-custom-hooks";
+
+const CustomButton = () => {
+  const { myRef, wasClicked, setWasClicked } = useClickOutside();
+  return (
+    <div ref={myRef}>
+      <button onClick={() => setWasClicked(false)}>
+        {wasClicked ? "Not-active" : "Active"}
+      </button>
+    </div>
+  );
+};
+
+```
+
+### Parameters
+
+None : This hooks takes no parameters.
+
+### Return value
+
+1. `ref` (__interface RefObject<T> {
+  readonly current: T | null;
+}__) : The reference to the DOM element.
+
+2. `wasClicked` (__boolean__) : The value determines, if the component is selected or whether the user clicks outside.
+
+3. `setWasClicked` (__React.Dispatch<React.SetStateAction<boolean>>__) : The dispatcher of the wasClicked state.
 
 </br>
 
