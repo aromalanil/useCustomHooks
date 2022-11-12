@@ -55,6 +55,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "imevanc",
+      "name": "Evangelos Charalampidis",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96417438?v=4",
+      "profile": "https://www.youtube.com/@teamevancodes",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -62,5 +72,6 @@
   "projectOwner": "aromalanil",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitConvention": "angular"
 }
