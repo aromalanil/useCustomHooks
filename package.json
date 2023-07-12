@@ -43,6 +43,7 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
+    "browser": "^0.2.6",
     "tsc": "^2.0.4"
   }
 }
