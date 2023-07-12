@@ -3,12 +3,12 @@ import { useEffect, useRef } from 'react';
 /**
  * Custom hook to retrieve the previous value of a useState
  *
- * @param {*} value Initial value of the state.
+ * @param {T} value Initial value of the state.
  */
-const usePrevious = (value) => {
+const usePrevious = <T>(value: T): T | undefined => {
   // The ref object is a generic container whose current property is mutable ...
   // ... and can hold any value, similar to an instance property on a class
-  const ref = useRef();
+  const ref = useRef<T>();
 
   // Store current value in ref
   useEffect(() => {
@@ -17,4 +17,5 @@ const usePrevious = (value) => {
 
   return ref.current;
 };
+
 export default usePrevious;

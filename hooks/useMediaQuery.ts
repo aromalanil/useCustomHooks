@@ -10,22 +10,26 @@ import { useEffect, useState } from 'react';
  *
  * @returns {boolean} Is the media query active
  */
-const useMediaQuery = (mediaQuery) => {
-  const [doesQueryMatch, setDoesQueryMatch] = useState(() => window.matchMedia(mediaQuery).matches);
+const useMediaQuery = (mediaQuery: string): boolean => {
+  const [doesQueryMatch, setDoesQueryMatch] = useState<boolean>(
+    () => window.matchMedia(mediaQuery).matches,
+  );
 
   useEffect(() => {
-    const mediaQueryChangeHandler = (e) => {
+    const mediaQueryList = window.matchMedia(mediaQuery);
+
+    const mediaQueryChangeHandler = (e: MediaQueryListEvent) => {
       setDoesQueryMatch(e.matches);
     };
 
     // Adding event listener for media query change on component mount
-    window.matchMedia(mediaQuery).addEventListener('change', mediaQueryChangeHandler);
+    mediaQueryList.addEventListener('change', mediaQueryChangeHandler);
 
     // Removing event listener component unmount
     return () => {
-      window.matchMedia(mediaQuery).removeEventListener('change', mediaQueryChangeHandler);
+      mediaQueryList.removeEventListener('change', mediaQueryChangeHandler);
     };
-  }, []);
+  }, [mediaQuery]);
 
   return doesQueryMatch;
 };

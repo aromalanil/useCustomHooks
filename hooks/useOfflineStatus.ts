@@ -4,10 +4,10 @@ import { useEffect, useState } from 'react';
  *
  * Custom hook to know the current status of the device (online/offline).
  *
- * @return {Boolean} If the device is offline or not
+ * @return {boolean} If the device is offline or not
  */
-const useOfflineStatus = () => {
-  const [isDeviceOffline, setDeviceOffline] = useState(false);
+const useOfflineStatus = (): boolean => {
+  const [isDeviceOffline, setDeviceOffline] = useState<boolean>(!navigator.onLine);
 
   useEffect(() => {
     const networkStatusListener = () => {
