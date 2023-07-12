@@ -5,13 +5,17 @@ import { useState, useEffect } from 'react';
  * @property {number} latitude - Latitude coordinate of the user
  * @property {number} longitude - Longitude coordinate of the user
  */
+interface GeoLocation {
+  latitude: number;
+  longitude: number;
+}
 
 /**
  * Hook which lets you get the Geolocation from your browser
- * @returns {GeoLocation} Object containing the latitude and longitude of the user.
+ * @returns {GeoLocation | {}} Object containing the latitude and longitude of the user, or an empty object if geolocation is not available.
  */
-const useGeoLocation = () => {
-  const [geoLocation, setGeoLocation] = useState({});
+const useGeoLocation = (): GeoLocation | {} => {
+  const [geoLocation, setGeoLocation] = useState<GeoLocation | {}>({});
 
   // Only called on ComponentDidMount
   useEffect(() => {
@@ -20,7 +24,7 @@ const useGeoLocation = () => {
       // If permission is granted we should be able to access to getCurrentPosition method
       navigator.geolocation.getCurrentPosition((position) => {
         // Creating an object to save the latitude and longitude
-        const userPosition = {
+        const userPosition: GeoLocation = {
           latitude: position.coords.latitude,
           longitude: position.coords.longitude,
         };

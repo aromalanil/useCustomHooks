@@ -6,14 +6,13 @@ import { useCallback } from 'react';
  * @param {number} delay The time delay in milliseconds.
  * @returns {function} The modified function.
  */
-function debounce(inputFunction, delay) {
-  let timeout;
-  return (...args) => {
-    const context = this;
+function debounce<F extends (...args: any[]) => any>(inputFunction: F, delay: number): (...args: Parameters<F>) => void {
+  let timeout: number | null;
+  return (...args: Parameters<F>) => {
     if (timeout) clearTimeout(timeout);
-    timeout = setTimeout(() => {
+    timeout = window.setTimeout(() => {
       timeout = null;
-      inputFunction.apply(context, args);
+      inputFunction(...args);
     }, delay);
   };
 }
@@ -26,6 +25,6 @@ function debounce(inputFunction, delay) {
  * @param {number} delay The time delay in milliseconds.
  * @returns {function} The modified function.
  */
-const useDebounce = (inputFunction, delay) => useCallback(debounce(inputFunction, delay), []);
+const useDebounce = <F extends (...args: any[]) => any>(inputFunction: F, delay: number) => useCallback(debounce(inputFunction, delay), [inputFunction, delay]);
 
 export default useDebounce;

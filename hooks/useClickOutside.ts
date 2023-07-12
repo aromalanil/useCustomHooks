@@ -1,31 +1,28 @@
-import React from 'react';
+import React, { useEffect, useRef, useState, Dispatch, SetStateAction } from 'react';
+
+interface ElementRef {
+  myRef: React.MutableRefObject<any>;
+  wasClicked: boolean;
+  setWasClicked: Dispatch<SetStateAction<boolean>>;
+}
 
 /**
- * @typedef {Object} ElementRef
- * @property {myRef} - reference to the DOM element
- * @property {wasClicked} - state
- * @property {setWasClicked} - setter of the state
- */
-
-/**
- *
- * Custom hook which return an object with the refence to the DOM element,
+ * Custom hook which return an object with the reference to the DOM element,
  * the state and the setter of the state.
- * @param {boolean} initialValue Initial value of the state.
  * @return {ElementRef} Object containing the ref of the DOM element,
  *  the click state and its setter.
  */
-const useClickOutside = () => {
-  const [wasClicked, setWasClicked] = React.useState(false);
-  const myRef = React.useRef(null);
+const useClickOutside = (): ElementRef => {
+  const [wasClicked, setWasClicked] = useState<boolean>(false);
+  const myRef = useRef<any>(null);
 
-  const clickOutside = (event) => {
+  const clickOutside = (event: MouseEvent): void => {
     if (myRef.current && !myRef.current.contains(event.target)) {
       setWasClicked(true);
     }
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     // Event listener to track the component activity.
     document.addEventListener('click', clickOutside);
     return () => {

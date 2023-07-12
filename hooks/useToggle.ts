@@ -5,12 +5,12 @@ import { useState } from 'react';
  * Custom hook which returns a boolean state and a state toggle function.
  *
  * @param {boolean} initialValue Initial value of the state.
- * @returns {Array} Array containing boolean state and a state toggle function.
+ * @returns {[boolean, () => void]} Array containing boolean state and a state toggle function.
  */
-const useToggle = (initialValue) => {
-  const [value, setValue] = useState(initialValue);
+const useToggle = (initialValue: boolean): [boolean, () => void] => {
+  const [value, setValue] = useState<boolean>(initialValue);
 
-  const toggleValue = () => {
+  const toggleValue = (): void => {
     setValue((currentValue) => !currentValue);
   };
 
